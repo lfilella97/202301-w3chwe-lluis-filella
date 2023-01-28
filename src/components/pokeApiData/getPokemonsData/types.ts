@@ -1,4 +1,4 @@
-interface PokemonsListStructure {
+export interface PokemonsListStructure {
   name: string;
   url: string;
 }
