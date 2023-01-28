@@ -1,10 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #c7a008;
   margin: 0;
+  height: 100vh;
 }
 
 header {
   display: flex;
   justify-content: center;
-  height: 100px;
+  height: 20vh;
+  padding-top: 15px;
+}
+
+.main-content {
+  min-height: 80vh;
 }
