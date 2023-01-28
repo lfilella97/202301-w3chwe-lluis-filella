@@ -1,0 +1,10 @@
+body {
+  background-color: #c7a008;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
