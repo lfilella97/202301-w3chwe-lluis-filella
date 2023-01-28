@@ -1,14 +1,11 @@
-import type ComponentStructure from "../types.js";
+import type ComponentStructure from "./types.js";
 
 class Component implements ComponentStructure {
-  domElement: HTMLElement;
-
-  constructor(
-    private readonly parentElement: HTMLElement,
-    className: string,
-    tag = "div"
-  ) {
+  domElement: Element;
+  parentElement: Element;
+  constructor(parentElement: Element, className: string, tag = "div") {
     this.domElement = document.createElement(tag);
+    this.parentElement = parentElement;
     this.domElement.className = className;
   }
 
