@@ -9,6 +9,7 @@ export class HeaderComponent extends Component implements ComponentStructure {
 
   render() {
     super.render();
-    this.domElement.innerHTML = `${pokeLogo}`;
+    this.domElement.innerHTML = `<i class="fa-solid fa-arrow-left"></i> ${pokeLogo} <i class="fa-solid fa-arrow-right"></i>`;
+    return "rendered";
   }
 }
