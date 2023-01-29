@@ -13,7 +13,7 @@ export class PokemonCardComponent extends Component implements CardStructure {
     super.render();
     this.domElement.innerHTML = `
     <img class="card__image" src="${this.pokemon.pokemonImage}" alt="front view of ${this.pokemon.pokemonName}" width="96" height="96">
-
+<span class="card__id">#${this.pokemon.pokemonId}#</span>
 <span class="card__name">${this.pokemon.pokemonName}</span>`;
   }
 }

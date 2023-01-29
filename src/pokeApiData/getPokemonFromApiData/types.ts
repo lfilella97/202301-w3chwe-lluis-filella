@@ -1,4 +1,5 @@
 export interface PokemonListOfBasicCardInfoStructure {
+  id: number;
   species: {
     name: string;
   };
@@ -8,6 +9,7 @@ export interface PokemonListOfBasicCardInfoStructure {
 }
 
 export interface PokemonStructure {
+  pokemonId: number;
   pokemonName: string;
   pokemonImage: string;
 }
