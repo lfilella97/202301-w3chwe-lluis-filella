@@ -11,9 +11,10 @@ export const getPokemonFromApiData = async (
     (await response.json()) as PokemonListOfBasicCardInfoStructure;
 
   const {
+    id: pokemonId,
     species: { name: pokemonName },
     sprites: { front_default: pokemonImage },
   } = results;
-  const pokemon = { pokemonName, pokemonImage };
+  const pokemon = { pokemonId, pokemonName, pokemonImage };
   return pokemon;
 };
