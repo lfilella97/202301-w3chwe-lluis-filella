@@ -3,32 +3,43 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif, sans-serif;
   background-color: #c7a008;
   margin: 0;
   height: 100vh;
 }
 
 header {
+  z-index: 1;
   display: flex;
   justify-content: center;
-  height: 13vh;
-  padding-top: 15px;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #3c5aa6;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .main-content {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 25px 50px;
+  align-items: center;
+  padding: 200px 50px 50px;
   gap: 25px;
 }
 
 .card {
   width: 125px;
   height: 150px;
-  background-color: #3b4cca;
+  background-color: rgb(255, 220, 220);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-radius: 25px;
   display: flex;
   flex-direction: column;
