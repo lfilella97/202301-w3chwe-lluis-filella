@@ -1,11 +1,4 @@
-import { MainPageComponent } from "./components/MainPageComponent/MainPageComponent.js";
-import { HeaderComponent } from "./components/HeaderComponent/HeaderComponent.js";
+import { renderApp } from "./components/componentIndex.js";
+import { fromApiRequestToPokedexDataList } from "./pokeApiData/fromApiRequestToPokedexDataList/fromApiRequestToPokedexDataList.js";
 
-const container = document.querySelector(".root");
-
-const header = new HeaderComponent(container);
-
-header.render();
-
-const mainContent = new MainPageComponent(container);
-mainContent.render();
+renderApp();
