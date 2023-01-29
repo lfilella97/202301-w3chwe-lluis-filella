@@ -9,5 +9,6 @@ export class MainPageComponent extends Component implements ComponentStructure {
   render() {
     super.render();
     this.domElement.innerHTML = ``;
+    return "rendered";
   }
 }
