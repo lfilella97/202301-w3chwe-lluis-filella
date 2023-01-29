@@ -10,4 +10,5 @@ export const renderApp = () => {
 
   const mainContent = new MainPageComponent(container);
   mainContent.render();
+  return mainContent.domElement;
 };

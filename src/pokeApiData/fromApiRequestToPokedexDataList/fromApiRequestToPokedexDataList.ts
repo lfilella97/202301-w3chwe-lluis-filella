@@ -1,13 +1,16 @@
 import { getPokeApiData } from "../getPokeApiData/getPokeApiData.js";
 import { getPokemonFromApiData } from "../getPokemonFromApiData/getPokemonFromApiData.js";
-import { keyLimit, keyOffSet, urlApi } from "../urlApi/urlApi.js";
-
-const fromPokemon = `1`;
-const toPokemon = `20`;
+import {
+  keyLimit,
+  keyOffSet,
+  pokemonsFrom,
+  pokemonsTo,
+  urlApi,
+} from "../urlApi/urlApi.js";
 
 export const fromApiRequestToPokedexDataList = async () => {
   const pokemonList = await getPokeApiData(
-    urlApi + keyOffSet + fromPokemon + keyLimit + toPokemon
+    urlApi + keyOffSet + pokemonsFrom + keyLimit + pokemonsTo
   );
   const pokedexData = [];
   for await (const pokemonInfo of pokemonList) {
